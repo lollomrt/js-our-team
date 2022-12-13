@@ -23,7 +23,7 @@ let ilTeam = [
     {
         nome: "Scott Estrada",
         ruolo: "Developer",
-        foto: src= "./img/scott-estrada-developer.jpg"
+        foto: src= "scott-estrada-developer.jpg"
     },
     {
         nome: "Barbara Ramos",
