@@ -1,3 +1,4 @@
+//MILESTONE 0: Creare l’array di oggetti con le informazioni fornite.
 let ilTeam = [
     {
         nome: "Wayne Barnet",
@@ -31,6 +32,13 @@ let ilTeam = [
     }
 ]
 
+// for (let i = 0; i < ilTeam.length; i++){
+//     console.log(ilTeam[i])
+// }
+
+//MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 for (let i = 0; i < ilTeam.length; i++){
-    console.log(ilTeam[i])
+    for (let key in ilTeam[i]){
+        console.log(ilTeam[i][key])
+    }
 }
