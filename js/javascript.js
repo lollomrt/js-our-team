@@ -42,3 +42,16 @@ for (let i = 0; i < ilTeam.length; i++){
         console.log(ilTeam[i][key])
     }
 }
+
+//MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+let contenitore = document.querySelector(".container")
+let riga
+
+for(let i = 1; i < ilTeam.length; i++){
+    riga = document.createElement("div")
+    riga.classList.add("riga")
+    riga.innerText = `nome: ${ilTeam[i].nome} ruolo: ${ilTeam[i].ruolo} immagine: ${ilTeam[i].foto}`
+    console.log(riga)
+    contenitore.append(riga)
+}
