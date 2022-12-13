@@ -4,6 +4,60 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f5f5f1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.container {
+    width: 50%;
+    margin: 2rem auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    width: 60%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.heading h2{
+    padding-bottom: 0.5rem
+}
+
 .griglia {
-    background-color: red;
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.riga {
+    width: calc(100% / 3 - 2rem);
+    margin: 1rem;
+    background-color: #fff;
+    text-align: center;
+    padding
+}
+
+img {
+    width: 100%;
+}
+
+.text{
+    padding: 1rem 0;
+}
+
+.titoletto {
+    font-size: 1rem;
+    font-weight: bold;
 }

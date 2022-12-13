@@ -62,10 +62,10 @@ function generatoreTabella(){
     let griglia = document.createElement("div")
     griglia.classList.add("griglia")
     document.getElementById("tab").appendChild(griglia)
-    for(let i = 1; i < ilTeam.length; i++){
+    for(let i = 0; i < ilTeam.length; i++){
         riga = document.createElement("div")
         riga.classList.add("riga")
-        riga.innerHTML = `<p>nome: ${ilTeam[i].nome}</p><p>ruolo: ${ilTeam[i].ruolo}</p><img src="./img/${ilTeam[i].foto}">`
+        riga.innerHTML = `</p><img src="./img/${ilTeam[i].foto}"><div class="text"><p class="titoletto">${ilTeam[i].nome}</p><p>${ilTeam[i].ruolo}<div>`
         console.log(riga)
         griglia.appendChild(riga)
     }
