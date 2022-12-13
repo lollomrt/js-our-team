@@ -23,7 +23,7 @@ let ilTeam = [
     {
         nome: "Scott Estrada",
         ruolo: "Developer",
-        foto: "scott-estrada-developer.jpg"
+        foto: src= "./img/scott-estrada-developer.jpg"
     },
     {
         nome: "Barbara Ramos",
@@ -45,13 +45,32 @@ for (let i = 0; i < ilTeam.length; i++){
 
 //MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
 
-let contenitore = document.querySelector(".container")
-let riga
+// let contenitore = document.querySelector(".container")
+// let riga
 
-for(let i = 1; i < ilTeam.length; i++){
-    riga = document.createElement("div")
-    riga.classList.add("riga")
-    riga.innerText = `nome: ${ilTeam[i].nome} ruolo: ${ilTeam[i].ruolo} immagine: ${ilTeam[i].foto}`
-    console.log(riga)
-    contenitore.append(riga)
+// for(let i = 1; i < ilTeam.length; i++){
+//     riga = document.createElement("div")
+//     riga.classList.add("riga")
+//     riga.innerText = `nome: ${ilTeam[i].nome} ruolo: ${ilTeam[i].ruolo} immagine: ${ilTeam[i].foto}`
+//     console.log(riga)
+//     contenitore.append(riga)
+// }
+
+//BONUS
+
+function generatoreTabella(){
+    let griglia = document.createElement("div")
+    griglia.classList.add("griglia")
+    document.getElementById("tab").appendChild(griglia)
+    for(let i = 1; i < ilTeam.length; i++){
+        riga = document.createElement("div")
+        riga.classList.add("riga")
+        riga.innerHTML = `<p>nome: ${ilTeam[i].nome}</p><p>ruolo: ${ilTeam[i].ruolo}</p><img src="./img/${ilTeam[i].foto}">`
+        console.log(riga)
+        griglia.appendChild(riga)
+    }
+    
+    return griglia
 }
+
+generatoreTabella()
